@@ -12,5 +12,10 @@ fun main(){
 
     //println(listaCursos)
 
-    listaCursos.forEach({ if (it.contains("Sistemas")){println(it)} })
+    val listaCursoSistemas = listaCursos.filter { it.contains("Sistemas") }
+
+    listaCursoSistemas.withIndex().forEach { println("${it.index} - ${it.value}")}
+
+    //listaCursos.forEach({ if (it.contains("Sistemas")){println(it)} })
+
 }
