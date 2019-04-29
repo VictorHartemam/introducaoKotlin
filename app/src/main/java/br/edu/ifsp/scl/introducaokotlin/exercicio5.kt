@@ -39,7 +39,7 @@ fun main(){
     // 2. Chamadas do segundo passo
     println( processaInteiros(2,3) {x:Int, y:Int -> x+y} )
     println( processaInteiros(2,3, fun(i:Int, j:Int):Int{return i*j}) )
-    println( processaInteiro(4, fun (numero:Int):Int {
+    print( processaInteiro(4, fun (numero:Int):Int {
         for(n in 1..numero){
             if(n*n == numero){
                 return n
